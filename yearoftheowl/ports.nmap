@@ -1,0 +1,24 @@
+# Nmap 7.93 scan initiated Sat Apr 15 21:14:49 2023 as: nmap -p- -T4 -Pn -sT -sV -vv -oN ports.nmap 10.10.105.204
+Nmap scan report for 10.10.105.204
+Host is up, received user-set (0.10s latency).
+Scanned at 2023-04-15 21:14:49 EDT for 160s
+Not shown: 65527 filtered tcp ports (no-response)
+PORT      STATE SERVICE       REASON  VERSION
+80/tcp    open  http          syn-ack Apache httpd 2.4.46 ((Win64) OpenSSL/1.1.1g PHP/7.4.10)
+139/tcp   open  netbios-ssn   syn-ack Microsoft Windows netbios-ssn
+443/tcp   open  ssl/http      syn-ack Apache httpd 2.4.46 ((Win64) OpenSSL/1.1.1g PHP/7.4.10)
+445/tcp   open  microsoft-ds? syn-ack
+3306/tcp  open  mysql?        syn-ack
+3389/tcp  open  ms-wbt-server syn-ack Microsoft Terminal Services
+5985/tcp  open  http          syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+47001/tcp open  http          syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3306-TCP:V=7.93%I=7%D=4/15%Time=643B4C9B%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,68,"d\0\0\x01\xffj\x04Host\x20'ip-10-11-28-14\.eu-west-1\.compute\.i
+SF:nternal'\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20Mari
+SF:aDB\x20server");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Apr 15 21:17:29 2023 -- 1 IP address (1 host up) scanned in 160.29 seconds
