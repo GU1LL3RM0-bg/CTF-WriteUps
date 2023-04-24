@@ -1,0 +1,39 @@
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-04-23 21:37 EDT
+Nmap scan report for sequel.htb (10.10.11.202)
+Host is up (0.024s latency).
+
+PORT     STATE SERVICE  VERSION
+1433/tcp open  ms-sql-s Microsoft SQL Server 2019 15.00.2000.00; RTM
+| ms-sql-info: 
+|   10.10.11.202:1433: 
+|     Version: 
+|       name: Microsoft SQL Server 2019 RTM
+|       number: 15.00.2000.00
+|       Product: Microsoft SQL Server 2019
+|       Service pack level: RTM
+|       Post-SP patches applied: false
+|_    TCP port: 1433
+| ms-sql-empty-password: 
+|_  10.10.11.202:1433: 
+| ms-sql-tables: 
+|   10.10.11.202:1433: 
+|_[10.10.11.202:1433]
+| ms-sql-xp-cmdshell: 
+|_  (Use --script-args=ms-sql-xp-cmdshell.cmd='<CMD>' to change command.)
+| ms-sql-dump-hashes: 
+|_  10.10.11.202:1433: ERROR: Bad username or password
+| ms-sql-config: 
+|   10.10.11.202:1433: 
+|_  ERROR: Bad username or password
+| ms-sql-ntlm-info: 
+|   10.10.11.202:1433: 
+|     Target_Name: sequel
+|     NetBIOS_Domain_Name: sequel
+|     NetBIOS_Computer_Name: DC
+|     DNS_Domain_Name: sequel.htb
+|     DNS_Computer_Name: dc.sequel.htb
+|     DNS_Tree_Name: sequel.htb
+|_    Product_Version: 10.0.17763
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 11.81 seconds
