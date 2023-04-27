@@ -1,0 +1,17 @@
+# Nmap 7.93 scan initiated Wed Apr 26 21:58:00 2023 as: nmap -vvv -sV -sC -A -oN ingniteTHM 10.10.217.52
+Nmap scan report for 10.10.217.52
+Host is up, received syn-ack (0.13s latency).
+Scanned at 2023-04-26 21:58:01 EDT for 29s
+Not shown: 999 closed tcp ports (conn-refused)
+PORT   STATE SERVICE REASON  VERSION
+80/tcp open  http    syn-ack Apache httpd 2.4.18 ((Ubuntu))
+| http-robots.txt: 1 disallowed entry 
+|_/fuel/
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Welcome to FUEL CMS
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Apr 26 21:58:30 2023 -- 1 IP address (1 host up) scanned in 30.09 seconds

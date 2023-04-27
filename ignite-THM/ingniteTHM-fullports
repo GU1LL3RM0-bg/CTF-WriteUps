@@ -1,0 +1,18 @@
+# Nmap 7.93 scan initiated Wed Apr 26 21:59:49 2023 as: nmap -vvv -sV -sC -p- -oN ingniteTHM-fullports 10.10.217.52
+Increasing send delay for 10.10.217.52 from 5 to 10 due to 11 out of 11 dropped probes since last increase.
+Nmap scan report for 10.10.217.52
+Host is up, received syn-ack (0.13s latency).
+Scanned at 2023-04-26 21:59:49 EDT for 1032s
+Not shown: 65534 closed tcp ports (conn-refused)
+PORT   STATE SERVICE REASON  VERSION
+80/tcp open  http    syn-ack Apache httpd 2.4.18 ((Ubuntu))
+|_http-title: Welcome to FUEL CMS
+| http-robots.txt: 1 disallowed entry 
+|_/fuel/
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Apr 26 22:17:01 2023 -- 1 IP address (1 host up) scanned in 1032.22 seconds
