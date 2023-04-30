@@ -1,0 +1,10 @@
+# Nmap 7.93 scan initiated Sun Apr 30 15:49:35 2023 as: nmap -v -p- -sS -Pn -oN lazyadminfull --open 10.10.137.190
+Nmap scan report for 10.10.137.190
+Host is up (0.10s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Apr 30 15:50:20 2023 -- 1 IP address (1 host up) scanned in 45.06 seconds
