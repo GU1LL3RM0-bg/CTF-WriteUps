@@ -1,0 +1,30 @@
+# Nmap 7.93 scan initiated Tue May  2 21:00:11 2023 as: nmap -v -sV -sC -A -oN nmapinitial 10.10.23.160
+Nmap scan report for 10.10.23.160
+Host is up (0.14s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| ssl-cert: Subject: commonName=WIN-LU09299160F
+| Issuer: commonName=WIN-LU09299160F
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-05-02T00:57:07
+| Not valid after:  2023-11-01T00:57:07
+| MD5:   87fb7d1b21a669653333b12b32e55506
+|_SHA-1: 6db0cbc3d0bbd4f84b2c3fc8f57e23dce2cee6bc
+|_ssl-date: 2023-05-03T01:01:52+00:00; 0s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: WIN-LU09299160F
+|   NetBIOS_Domain_Name: WIN-LU09299160F
+|   NetBIOS_Computer_Name: WIN-LU09299160F
+|   DNS_Domain_Name: WIN-LU09299160F
+|   DNS_Computer_Name: WIN-LU09299160F
+|   Product_Version: 10.0.17763
+|_  System_Time: 2023-05-03T01:00:44+00:00
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue May  2 21:01:59 2023 -- 1 IP address (1 host up) scanned in 107.81 seconds
