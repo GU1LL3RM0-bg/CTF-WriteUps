@@ -1,0 +1,3 @@
+# Nmap 7.93 scan initiated Thu May  4 19:06:25 2023 as: nmap -vvv -sS -p- -T4 --open -Pn -oN nmapfull 10.10.11.205
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Thu May  4 20:56:24 2023 -- 1 IP address (1 host up) scanned in 6599.19 seconds
