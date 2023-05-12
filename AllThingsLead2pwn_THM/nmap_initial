@@ -1,0 +1,114 @@
+# Nmap 7.93 scan initiated Wed May 10 18:45:02 2023 as: nmap -sV -sC -A -oN nmap_initial -vv 10.10.2.38
+Increasing send delay for 10.10.2.38 from 5 to 10 due to 11 out of 12 dropped probes since last increase.
+Increasing send delay for 10.10.2.38 from 10 to 20 due to 11 out of 15 dropped probes since last increase.
+Increasing send delay for 10.10.2.38 from 20 to 40 due to 11 out of 15 dropped probes since last increase.
+Increasing send delay for 10.10.2.38 from 40 to 80 due to 11 out of 14 dropped probes since last increase.
+Increasing send delay for 10.10.2.38 from 80 to 160 due to 11 out of 12 dropped probes since last increase.
+Increasing send delay for 10.10.2.38 from 160 to 320 due to 11 out of 12 dropped probes since last increase.
+Increasing send delay for 10.10.2.38 from 320 to 640 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.2.38 from 640 to 1000 due to 11 out of 11 dropped probes since last increase.
+Nmap scan report for 10.10.2.38
+Host is up, received echo-reply ttl 127 (0.13s latency).
+Scanned at 2023-05-10 18:45:03 EDT for 634s
+Not shown: 992 closed tcp ports (reset)
+PORT     STATE SERVICE        REASON          VERSION
+21/tcp   open  ftp            syn-ack ttl 127 Microsoft ftpd
+| ftp-syst: 
+|_  SYST: Windows_NT
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_11-14-20  04:26PM                  173 notice.txt
+80/tcp   open  http           syn-ack ttl 127 Apache httpd 2.4.46 ((Win64) OpenSSL/1.1.1g PHP/7.4.11)
+| http-methods: 
+|_  Supported Methods: HEAD OPTIONS
+135/tcp  open  msrpc          syn-ack ttl 127 Microsoft Windows RPC
+139/tcp  open  netbios-ssn    syn-ack ttl 127 Microsoft Windows netbios-ssn
+443/tcp  open  ssl/http       syn-ack ttl 127 Apache httpd 2.4.46 ((Win64) OpenSSL/1.1.1g PHP/7.4.11)
+| ssl-cert: Subject: commonName=localhost
+| Issuer: commonName=localhost
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2009-11-10T23:48:47
+| Not valid after:  2019-11-08T23:48:47
+| MD5:   a0a44cc99e84b26f9e639f9ed229dee0
+| SHA-1: b0238c547a905bfa119c4e8baccaeacf36491ff6
+| -----BEGIN CERTIFICATE-----
+| MIIBnzCCAQgCCQC1x1LJh4G1AzANBgkqhkiG9w0BAQUFADAUMRIwEAYDVQQDEwls
+| b2NhbGhvc3QwHhcNMDkxMTEwMjM0ODQ3WhcNMTkxMTA4MjM0ODQ3WjAUMRIwEAYD
+| VQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMEl0yfj
+| 7K0Ng2pt51+adRAj4pCdoGOVjx1BmljVnGOMW3OGkHnMw9ajibh1vB6UfHxu463o
+| J1wLxgxq+Q8y/rPEehAjBCspKNSq+bMvZhD4p8HNYMRrKFfjZzv3ns1IItw46kgT
+| gDpAl1cMRzVGPXFimu5TnWMOZ3ooyaQ0/xntAgMBAAEwDQYJKoZIhvcNAQEFBQAD
+| gYEAavHzSWz5umhfb/MnBMa5DL2VNzS+9whmmpsDGEG+uR0kM1W2GQIdVHHJTyFd
+| aHXzgVJBQcWTwhp84nvHSiQTDBSaT6cQNQpvag/TaED/SEQpm0VqDFwpfFYuufBL
+| vVNbLkKxbK2XwUvu0RxoLdBMC/89HqrZ0ppiONuQ+X2MtxE=
+|_-----END CERTIFICATE-----
+|_http-title: 400 Bad Request
+445/tcp  open  microsoft-ds?  syn-ack ttl 127
+3389/tcp open  ms-wbt-server? syn-ack ttl 127
+| ssl-cert: Subject: commonName=DESKTOP-997GG7D
+| Issuer: commonName=DESKTOP-997GG7D
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-05-09T22:39:53
+| Not valid after:  2023-11-08T22:39:53
+| MD5:   a01428c1284405ba7c873b8c4593a08d
+| SHA-1: 12b0d974475473bfd9dd078885e7bab8e38d62cc
+| -----BEGIN CERTIFICATE-----
+| MIIC4jCCAcqgAwIBAgIQWa+a2SLfX49B0t0ZLB8K7TANBgkqhkiG9w0BAQsFADAa
+| MRgwFgYDVQQDEw9ERVNLVE9QLTk5N0dHN0QwHhcNMjMwNTA5MjIzOTUzWhcNMjMx
+| MTA4MjIzOTUzWjAaMRgwFgYDVQQDEw9ERVNLVE9QLTk5N0dHN0QwggEiMA0GCSqG
+| SIb3DQEBAQUAA4IBDwAwggEKAoIBAQDZJzd1waOcUj210YXjIVAftBh6epr5M9Vy
+| /kITUTmBE+SGDgGqbuluAe/6mzZ8TEBE4qOI1JtVCuwS1BRINYN+L7o/hdR/uYXb
+| SO5fnWUxFcZN4hsVW90PgkJV0RLGF4dBbHSW7YDCSXYx5VFxIzLIWE0AiFOXHVI1
+| MLrHU3J8qy7uF6L6i1sTQkmfBWqrpc/+bvm33SX3NV3oeT8SN9P5/SS8nhCIXWDN
+| YKt7GL3v19vEU+JbUp6OinxuegCZcXRMyzFVGrvzL0vmGJ628qfMR298Tjy1nAGz
+| gLndFnU4OoHV4CauZycnUkFDrZOrVnSBPUafIkQtLHZ+ILrV3OzlAgMBAAGjJDAi
+| MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsF
+| AAOCAQEAV/p+HwffpVXj9yyTivfK1Z83CiyiRUurdcmWkaO7p9nN6kXuSMXUEsHT
+| 56RxwpUQuEqGQpRGO7mCUsfb7/Q6xBXEC76pdj0U4KbAag/qPEkoHd18Hw5nxxZ3
+| Nxgf19mZKBCd89KYPJaCBvCx+NfPLu5R5GzpFnoK8HyiQgoMxyKjsl64TeTTCZxl
+| 0JDxWkTOJsZ42DACVUE2qBd1gmbeAX5qf+7X/s3Ma0w4hzFZpDuJK/vxujRDFcXD
+| TQnitNEPtKKBVRtEIPoM2ZZB5uwZu/ilkA9ql9uCMyMbgxrWZtzDqNzYRvPNE8fy
+| mJUi9G8woq5KS4IGUvxf0gt7TT9D8w==
+|_-----END CERTIFICATE-----
+5900/tcp open  vnc            syn-ack ttl 127 VNC (protocol 3.8)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=5/10%OT=21%CT=1%CU=38907%PV=Y%DS=2%DC=T%G=Y%TM=645C20E
+OS:9%P=x86_64-pc-linux-gnu)SEQ(SP=106%GCD=1%ISR=104%TI=I%CI=I%II=I%SS=S%TS=
+OS:U)OPS(O1=M508NW8NNS%O2=M508NW8NNS%O3=M508NW8%O4=M508NW8NNS%O5=M508NW8NNS
+OS:%O6=M508NNS)WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FF70)ECN(R=Y%
+OS:DF=Y%T=80%W=FFFF%O=M508NW8NNS%CC=N%Q=)T1(R=Y%DF=Y%T=80%S=O%A=S+%F=AS%RD=
+OS:0%Q=)T2(R=Y%DF=Y%T=80%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)T3(R=Y%DF=Y%T=80%W=0%S
+OS:=Z%A=O%F=AR%O=%RD=0%Q=)T4(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)T5(R=
+OS:Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=
+OS:R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T
+OS:=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=80%CD=
+OS:Z)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_smb2-security-mode: Couldn't establish a SMBv2 connection.
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 33490/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 20916/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 64106/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 24609/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+|_smb2-time: Protocol negotiation failed (SMB2)
+
+TRACEROUTE (using port 111/tcp)
+HOP RTT       ADDRESS
+1   108.14 ms 10.11.0.1
+2   108.56 ms 10.10.2.38
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed May 10 18:55:37 2023 -- 1 IP address (1 host up) scanned in 635.23 seconds
