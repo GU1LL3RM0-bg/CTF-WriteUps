@@ -1,0 +1,41 @@
+Welcome to the e-Citizen platform!
+Please make a selection:
+[1] Register
+[2] Authenticate
+[3] Exit
+Selection:1
+Please provide your THM username: mrelfinal
+Creating email user
+User has been succesfully created
+
+
+=======================================
+Thank you for registering on e-Citizen for the Red Team engagement against TheReserve.
+Please take note of the following details and please make sure to save them, as they will not be displayed again.
+=======================================
+Username: mrelfinal
+Password: vp5ZMe1XUHm69Fxg
+MailAddr: mrelfinal@corp.th3reserve.loc
+IP Range: 10.200.117.0/24
+=======================================
+
+These details are now active. As you can see, we have already purchased a domain for domain squatting to be used for phishing.
+Once you discover the webmail server, you can use these details to authenticate and recover additional project information from your mailbox.
+Once you have performed actions to compromise the network, please authenticate to e-Citizen in order to provide an update to the government. If your update is sufficient, you will be awarded a flag to indicate progress.
+
+=======================================
+Please note once again that the e-Citizen platform, and this VPN server, 10.200.117.250, are not in-scope for this assessment.
+Any attempts made against this machine will result in a ban from the challenge.
+=======================================
+
+Best of luck and
+may
+you
+hack
+the
+bank!
+
+
+
+Thank you for using e-Citizen, goodbye!
+Connection to 10.200.117.250 closed.

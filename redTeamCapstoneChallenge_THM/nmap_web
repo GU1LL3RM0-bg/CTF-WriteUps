@@ -1,0 +1,20 @@
+# Nmap 7.93 scan initiated Thu May 25 21:06:13 2023 as: nmap -A -v -sV -oN nmap_web 10.200.117.12
+Nmap scan report for 10.200.117.12
+Host is up (0.19s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 8fece633a1f8bf8aa153fb5b2e0c7766 (RSA)
+|   256 cf15625ef78f77387ced25b0c0c6be75 (ECDSA)
+|_  256 ff5758c127581276240e1de114c8e459 (ED25519)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: VPN Request Portal
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu May 25 21:06:47 2023 -- 1 IP address (1 host up) scanned in 33.25 seconds

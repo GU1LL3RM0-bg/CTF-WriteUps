@@ -1,0 +1,110 @@
+# Nmap 7.93 scan initiated Wed May 24 20:00:25 2023 as: nmap -v -sV -sC -O -T4 -oN nmap_initial 10.200.117.11
+Increasing send delay for 10.200.117.11 from 0 to 5 due to 254 out of 634 dropped probes since last increase.
+Increasing send delay for 10.200.117.11 from 5 to 10 due to 17 out of 42 dropped probes since last increase.
+adjust_timeouts2: packet supposedly had rtt of -71535 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -71535 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -121814 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -121814 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -96693 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -96693 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -70927 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -70927 microseconds.  Ignoring time.
+Nmap scan report for 10.200.117.11
+Host is up (0.10s latency).
+Not shown: 989 closed tcp ports (reset)
+PORT     STATE SERVICE       VERSION
+22/tcp   open  ssh           OpenSSH for_Windows_7.7 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 f36c52d27fe90e1cc1c7ac962cd1ec2d (RSA)
+|   256 c2563cedc4b069a8e7ad3c310505e985 (ECDSA)
+|_  256 d3e5f07375d520d9c0bb4199e7afa000 (ED25519)
+25/tcp   open  smtp          hMailServer smtpd
+| smtp-commands: MAIL, SIZE 20480000, AUTH LOGIN, HELP
+|_ 211 DATA HELO EHLO MAIL NOOP QUIT RCPT RSET SAML TURN VRFY
+80/tcp   open  http          Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-title: IIS Windows Server
+110/tcp  open  pop3          hMailServer pop3d
+|_pop3-capabilities: TOP USER UIDL
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+143/tcp  open  imap          hMailServer imapd
+|_imap-capabilities: IMAP4 IMAP4rev1 CAPABILITY CHILDREN QUOTA OK completed RIGHTS=texkA0001 NAMESPACE ACL IDLE SORT
+445/tcp  open  microsoft-ds?
+587/tcp  open  smtp          hMailServer smtpd
+| smtp-commands: MAIL, SIZE 20480000, AUTH LOGIN, HELP
+|_ 211 DATA HELO EHLO MAIL NOOP QUIT RCPT RSET SAML TURN VRFY
+3306/tcp open  mysql         MySQL 8.0.31
+| ssl-cert: Subject: commonName=MySQL_Server_8.0.31_Auto_Generated_Server_Certificate
+| Issuer: commonName=MySQL_Server_8.0.31_Auto_Generated_CA_Certificate
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-01-10T07:46:11
+| Not valid after:  2033-01-07T07:46:11
+| MD5:   1bd2ba34dd9d39a0fba25013eb1fb3f6
+|_SHA-1: 406bcedd04f3dd8e17842fd6cefda0d713824cdf
+|_ssl-date: TLS randomness does not represent time
+| mysql-info: 
+|   Protocol: 10
+|   Version: 8.0.31
+|   Thread ID: 76
+|   Capabilities flags: 65535
+|   Some Capabilities: Support41Auth, ODBCClient, Speaks41ProtocolOld, SupportsTransactions, IgnoreSigpipes, LongPassword, FoundRows, SupportsCompression, LongColumnFlag, DontAllowDatabaseTableColumn, SupportsLoadDataLocal, InteractiveClient, IgnoreSpaceBeforeParenthesis, ConnectWithDatabase, Speaks41ProtocolNew, SwitchToSSLAfterHandshake, SupportsMultipleResults, SupportsMultipleStatments, SupportsAuthPlugins
+|   Status: Autocommit
+|   Salt: \x15@y~m\x065\x17p\x1B\x1ESv\x0F;e8\x01\x14z
+|_  Auth Plugin Name: caching_sha2_password
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+|_ssl-date: 2023-05-25T00:01:19+00:00; -1s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: THERESERVE
+|   NetBIOS_Domain_Name: THERESERVE
+|   NetBIOS_Computer_Name: MAIL
+|   DNS_Domain_Name: thereserve.loc
+|   DNS_Computer_Name: MAIL.thereserve.loc
+|   DNS_Tree_Name: thereserve.loc
+|   Product_Version: 10.0.17763
+|_  System_Time: 2023-05-25T00:01:09+00:00
+| ssl-cert: Subject: commonName=MAIL.thereserve.loc
+| Issuer: commonName=MAIL.thereserve.loc
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-01-09T06:02:42
+| Not valid after:  2023-07-11T06:02:42
+| MD5:   e0699ba0b94f10115fe7858e87f5b5f0
+|_SHA-1: c6b1ede543c603632c818358971b58d24e985133
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=5/24%OT=22%CT=1%CU=32638%PV=Y%DS=2%DC=I%G=Y%TM=646EA55
+OS:6%P=x86_64-pc-linux-gnu)SEQ(SP=FD%GCD=1%ISR=105%TI=I%CI=I%II=I%SS=S%TS=U
+OS:)SEQ(SP=FD%GCD=1%ISR=105%TI=I%CI=I%TS=U)SEQ(SP=FD%GCD=1%ISR=105%CI=I%TS=
+OS:U)OPS(O1=M507NW8NNS%O2=M507NW8NNS%O3=M507NW8%O4=M507NW8NNS%O5=M507NW8NNS
+OS:%O6=M507NNS)WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FF70)ECN(R=Y%
+OS:DF=Y%T=80%W=FFFF%O=M507NW8NNS%CC=Y%Q=)T1(R=Y%DF=Y%T=80%S=O%A=S+%F=AS%RD=
+OS:0%Q=)T2(R=Y%DF=Y%T=80%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)T3(R=Y%DF=Y%T=80%W=0%S
+OS:=Z%A=O%F=AR%O=%RD=0%Q=)T4(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)T5(R=
+OS:Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=
+OS:R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T
+OS:=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=80%CD=
+OS:Z)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=253 (Good luck!)
+IP ID Sequence Generation: Busy server or unknown class
+Service Info: Host: MAIL; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2023-05-25T00:01:14
+|_  start_date: N/A
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed May 24 20:01:26 2023 -- 1 IP address (1 host up) scanned in 61.02 seconds
